@@ -97,7 +97,7 @@ class Calculadora(QMainWindow):
             self.display.setText(text)
             return
 
-        # controla se um número ou um parêntise se encontra ao lado de outro parêntese diferente e adiciona automáticamente um 'x'
+        # controla se um número ou um parêntese se encontra ao lado de outro parêntese diferente e adiciona automáticamente um 'x'
         # ex: 3(5) = 3x(5)
         if last_char in '0123456789)' and text == '(':
             self.display.setText(display_text + 'x' + text)
@@ -108,7 +108,7 @@ class Calculadora(QMainWindow):
             self.result_displayed = False
             return
 
-        # impede que seja colocado um operador sem ser o '-' ao lado de um parêntises e elimina automaticamente parêntises vazios '()'
+        # impede que seja colocado um operador sem ser o '-' ao lado de um parênteses e elimina automaticamente parênteses vazios '()'
         if last_char == '(':
             if text in '+x÷':
                 self.display.setText(display_text)
