@@ -1,0 +1,1 @@
+controlar casas decimais (impedir que um numero tenha várias divisórias decimais '.') -> na função handle_button_click
